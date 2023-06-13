@@ -1,0 +1,129 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomDescriptionList">
+    <h4 class="mom-h4">Responsive description list</h4>
+    <div class="snapshot stack-y:48">
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+        ]"
+        term-width="s"
+      />
+
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+        ]"
+        term-width="m"
+      />
+
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+        ]"
+        term-width="l"
+      />
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+          {
+            term: 'Term 3',
+            details: 'Details 3',
+          },
+        ]"
+        divider
+      />
+    </div>
+
+    <h4 class="mom-h4">Horizontal description list</h4>
+    <div class="snapshot">
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+        ]"
+        variant="horizontal"
+      />
+    </div>
+
+    <h4 class="mom-h4">Vertical description list</h4>
+    <div class="snapshot">
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+        ]"
+        variant="vertical"
+      />
+    </div>
+
+    <h4 class="mom-h4">Table style description list</h4>
+    <div class="snapshot">
+      <mom-description-list
+        :items="[
+          {
+            term: 'Term 1',
+            details: 'Details 1',
+            tooltip: 'Tooltip',
+          },
+          {
+            term: 'Term 2',
+            details: 'Details 2',
+          },
+          {
+            term: 'Term 3',
+            details: 'Details 3',
+            boldText: true,
+            topBorder: true,
+          },
+        ]"
+        variant="table"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

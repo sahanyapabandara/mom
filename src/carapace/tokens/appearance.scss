@@ -1,0 +1,27 @@
+// Box shadows
+@include set(
+  box-shadow,
+  (
+    s: (
+      0px 0px 2px rgba(0, 0, 0, 0.1),
+      0px 1px 4px rgba(0, 0, 0, 0.2),
+    ),
+    m: (
+      0px 6px 10px rgba(0, 0, 0, 0.14),
+      0px 1px 18px rgba(0, 0, 0, 0.12),
+    ),
+    l: (
+      0px 12px 17px rgba(0, 0, 0, 0.14),
+      0px 5px 22px rgba(0, 0, 0, 0.12),
+    ),
+    xl: (
+      0px 11px 15px rgba(0, 0, 0, 0.2),
+      0px 24px 38px rgba(0, 0, 0, 0.14),
+      0px 9px 46px rgba(0, 0, 0, 0.12),
+    ),
+    header: (
+      0px 2px 2px rgba(0, 0, 0, 0.2),
+      0px 0px 2px rgba(0, 0, 0, 0.1),
+    ),
+  )
+);

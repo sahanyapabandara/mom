@@ -1,0 +1,379 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomTable">
+    <h4 class="mom-h4">Simple table</h4>
+    <div class="snapshot stack-y:24">
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          }
+        ]"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          }
+        ]"
+        :footer="{
+          col1: 'Column footer 1',
+          col2: 'Column footer 2',
+        }"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          }
+        ]"
+        full-width
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2 line 1 <br />Row 1 column 2 line 2',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2 line 1 <br />Row 2 column 2 line 2',
+          }
+        ]"
+        vertical-align="middle"
+      />
+    </div>
+
+    <h4 class="mom-h4">Table with sortable columns</h4>
+    <div class="snapshot">
+      <mom-table
+        :header="{
+          col1: { value: 'Column header 1', sortable: true },
+          col2: { value: 'Column header 2', sortable: true },
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+        ]"
+        sort-key="col1"
+        sort-order="asc"
+      />
+    </div>
+
+    <h4 class="mom-h4">Selectable table</h4>
+    <div class="snapshot stack-y:24">
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            value: '1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            value: '2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+          {
+            value: '3',
+            col1: 'Row 3 Column 1',
+            col2: 'Row 3 Column 2',
+            disabled: true
+          }
+        ]"
+        value="2"
+        select-mode="single"
+        input-name="radio"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            value: '1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            value: '2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+          {
+            value: '3',
+            col1: 'Row 3 Column 1',
+            col2: 'Row 3 Column 2',
+            disabled: true
+          }
+        ]"
+        :value="['2']"
+        select-mode="multiple"
+        input-name="checkbox"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            value: '1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            value: '2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+        ]"
+        select-mode="single"
+        input-name="radio-error"
+        input-state="error"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            value: '1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            value: '2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+        ]"
+        select-mode="multiple"
+        input-name="checkbox-error"
+        input-state="error"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            value: '1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            value: '2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+        ]"
+        select-mode="single"
+        input-name="radio-warning"
+        input-state="warning"
+      />
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            value: '1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            value: '2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+        ]"
+        select-mode="multiple"
+        input-name="checkbox-warning"
+        input-state="warning"
+      />
+    </div>
+
+    <h4 class="mom-h4">Expandable table</h4>
+    <div class="snapshot">
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            id: 'row1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            id: 'row2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+          {
+            id: 'row3',
+            col1: 'Row 3 column 1',
+            col2: 'Row 3 column 2',
+            disabled: true,
+          },
+          {
+            id: 'row4',
+            col1: 'Row 4 column 1',
+            col2: 'Row 4 column 2',
+            locked: true,
+          },
+        ]"
+        select-mode="expandable"
+      />
+    </div>
+
+    <h4 class="mom-h4">Clickable table</h4>
+    <div class="snapshot">
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            id: 'row1',
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            id: 'row2',
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          },
+          {
+            id: 'row3',
+            col1: 'Row 3 column 1',
+            col2: 'Row 3 column 2',
+            disabled: true,
+          },
+          {
+            id: 'row4',
+            col1: 'Row 4 column 1',
+            col2: 'Row 4 column 2',
+            locked: true,
+          },
+        ]"
+        clickable
+      />
+    </div>
+
+    <h4 class="mom-h4">Disabled table</h4>
+    <div class="snapshot">
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+          }
+        ]"
+        select-mode="single"
+        disabled
+      />
+    </div>
+
+    <h4 class="mom-h4">Table with pagination</h4>
+    <div class="snapshot">
+      <mom-table
+        :header="{
+          col1: 'Column header 1',
+          col2: 'Column header 2',
+          col3: 'Column header 3',
+        }"
+        :body="[
+          {
+            col1: 'Row 1 column 1',
+            col2: 'Row 1 column 2',
+            col3: 'Row 1 column 3',
+          },
+          {
+            col1: 'Row 2 column 1',
+            col2: 'Row 2 column 2',
+            col3: 'Row 2 column 3',
+          },
+          {
+            col1: 'Row 3 column 1',
+            col2: 'Row 3 column 2',
+            col3: 'Row 3 column 3',
+          },
+          {
+            col1: 'Row 4 column 1',
+            col2: 'Row 4 column 2',
+            col3: 'Row 4 column 3',
+          },
+          {
+            col1: 'Row 5 column 1',
+            col2: 'Row 5 column 2',
+            col3: 'Row 5 column 3',
+          },
+          {
+            col1: 'Row 6 column 1',
+            col2: 'Row 6 column 2',
+            col3: 'Row 6 column 3',
+          },
+        ]"
+        full-width
+        pagination
+        rows-per-page="2"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

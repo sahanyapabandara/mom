@@ -1,0 +1,24 @@
+#
+# MEDIA QUERY TOKENS
+#
+
+props:
+  media_query_mobile:
+    value: "(min-width: 20rem)"
+  media_query_tablet:
+    value: "(min-width: 45rem)"
+  media_query_desktop:
+    value: "(min-width: 64rem)"
+  media_query_grid_xs:
+    value: "(min-width: 20rem)"
+  media_query_grid_sm:
+    value: "(min-width: 32.5rem)"
+  media_query_grid_md:
+    value: "(min-width: 45rem)"
+  media_query_grid_lg:
+    value: "(min-width: 57.5rem)"
+  media_query_grid_xl:
+    value: "(min-width: 70rem)"
+global:
+  type: media-query
+  category: media-query

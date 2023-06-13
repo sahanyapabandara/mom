@@ -1,0 +1,269 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomInputCheckbox">
+    <h4 class="mom-h4">Checkboxes variant</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-checkbox
+        name="input-checkbox1"
+        :value="['2']"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-checkbox
+        name="input-checkbox2"
+        variant="horizontal"
+        :value="['2']"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-checkbox
+        name="input-checkbox3"
+        variant="card"
+        :value="['2']"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Disabled checkboxes</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-checkbox
+        name="input-checkbox4"
+        :value="['2']"
+        disabled
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-checkbox
+        name="input-checkbox5"
+        variant="horizontal"
+        :value="['2']"
+        disabled
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-checkbox
+        name="input-checkbox6"
+        variant="card"
+        :value="['2']"
+        disabled
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+            },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+            },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Checkboxes with input state</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-checkbox
+        name="input-checkbox7"
+        :value="['2']"
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-checkbox
+        name="input-checkbox8"
+        variant="horizontal"
+        :value="['2']"
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-checkbox
+        name="input-checkbox9"
+        variant="card"
+        :value="['2']"
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+            },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+            },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-checkbox
+        name="input-checkbox10"
+        :value="['2']"
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-checkbox
+        name="input-checkbox11"
+        variant="horizontal"
+        :value="['2']"
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-checkbox
+        name="input-checkbox12"
+        variant="card"
+        :value="['2']"
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+            },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+            },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

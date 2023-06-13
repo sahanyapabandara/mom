@@ -1,0 +1,86 @@
+#
+# TYPOGRAPHY TOKENS
+#
+
+props:
+  #Font family
+  font_family:
+    value: "'Open Sans', sans-serif"
+    category: font_family
+
+  #Font weight
+  font_weight_bold:
+    value: "700"
+    category: font_weight
+  font_weight_semibold:
+    value: "600"
+    category: font_weight
+  font_weight_regular:
+    value: "400"
+    category: font_weight
+  font_weight_light:
+    value: "300"
+    category: font_weight
+
+  #Font size
+  font_size_2xl:
+    value: "1.75rem"
+    category: font_size
+  font_size_tablet_2xl:
+    value: "2.25rem"
+    category: font_size
+  font_size_xl:
+    value: "1.5rem"
+    category: font_size
+  font_size_tablet_xl:
+    value: "1.75rem"
+    category: font_size
+  font_size_l:
+    value: "1.25rem"
+    category: font_size
+  font_size_m:
+    value: "1rem"
+    category: font_size
+  font_size_s:
+    value: "0.875rem"
+    category: font_size
+  font_size_xs:
+    value: "0.75rem"
+    category: font_size
+
+  #Line height
+  line_height_2xl:
+    value: "2.25rem"
+    category: line_height
+  line_height_tablet_2xl:
+    value: "2.5rem"
+    category: line_height
+  line_height_xl:
+    value: "2rem,"
+    category: line_height
+  line_height_tablet_xl:
+    value: "2.25rem"
+    category: line_height
+  line_height_l:
+    value: "1.75rem"
+    category: line_height
+  line_height_m:
+    value: "1.5rem"
+    category: line_height
+  line_height_s:
+    value: "1.25rem"
+    category: line_height
+  line_height_xs:
+    value: "1rem"
+    category: line_height
+
+  #Letter spacing
+  letter_spacing_m:
+    value: "0"
+    category: letter_spacing
+  letter_spacing_s:
+    value: "-0.5px"
+    category: letter_spacing
+
+global:
+  type: typography

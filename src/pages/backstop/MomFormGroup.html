@@ -1,0 +1,130 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomFormGroup">
+    <h4 class="mom-h4">Form group size</h4>
+    <div class="snapshot stack-y:48">
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="xs">
+        <mom-input-text size="xs" />
+      </mom-form-group>
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="xs1">
+        <mom-input-text size="xs1" />
+      </mom-form-group>
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="s">
+        <mom-input-text size="s" />
+      </mom-form-group>
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="m">
+        <mom-input-text size="m" />
+      </mom-form-group>
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="l">
+        <mom-input-text size="l" />
+      </mom-form-group>
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="xl">
+        <mom-input-text size="xl" />
+      </mom-form-group>
+      <mom-form-group label="Form label" tooltip="Tooltip text" hint-text="Hint text" size="full">
+        <mom-input-text size="full" />
+      </mom-form-group>
+    </div>
+
+    <h4 class="mom-h4">Input state and form message</h4>
+    <div class="snapshot stack-y:48">
+      <mom-form-group label="Form label" message-text="Error message" input-state="error">
+        <mom-input-text />
+      </mom-form-group>
+      <mom-form-group
+        label="Form label"
+        :message-text="['Error message 1', 'Error message 2']"
+        input-state="error"
+      >
+        <mom-input-text />
+      </mom-form-group>
+      <mom-form-group
+        label="Form label"
+        :message-text="['Error message 1', 'Error message 2', 'Error message 2']"
+        message-type="list"
+        input-state="error"
+      >
+        <mom-input-text />
+      </mom-form-group>
+      <mom-form-group label="Form label" message-text="Warning message" input-state="warning">
+        <mom-input-text />
+      </mom-form-group>
+      <mom-form-group
+        label="Form label"
+        :message-text="['Warning message 1', 'Warning message 2']"
+        input-state="warning"
+      >
+        <mom-input-text />
+      </mom-form-group>
+      <mom-form-group
+        label="Form label"
+        :message-text="['Warning message 1', 'Warning message 2', 'Warning message 2']"
+        message-type="list"
+        input-state="warning"
+      >
+        <mom-input-text />
+      </mom-form-group>
+    </div>
+
+    <h4 class="mom-h4">Form group with modal</h4>
+    <div class="snapshot">
+      <mom-form-group label="Form label" size="l">
+        <mom-upload url="https://httpbin.org/post" />
+        <mom-modal
+          slot="modal"
+          toggle-type="link"
+          toggle-text="View guide"
+          toggle-size="s"
+          toggle-icon="lightbulb"
+        >
+          <p class="mom-p">Form group modal</p>
+        </mom-modal>
+      </mom-form-group>
+    </div>
+
+    <h4 class="mom-h4">Form group with inline input</h4>
+    <div class="snapshot">
+      <mom-form-group label="Form label" inline-input>
+        <mom-input-checkbox-button name="inline-checkbox" label="Checkbox label" value="1" />
+      </mom-form-group>
+
+      <mom-form-group label="Form label" inline-input>
+        <mom-input-radio
+          name="inline-radio"
+          variant="horizontal"
+          :options="[
+            {
+              label: 'Yes',
+              value: 'Yes'
+            },
+            {
+              label: 'No',
+              value: 'No'
+            },
+          ]"
+        />
+      </mom-form-group>
+    </div>
+
+    <h4 class="mom-h4">Form groups with bullet</h4>
+    <div class="snapshot alphareset">
+      <mom-form-group label="Form label" show-bullet>
+        <mom-input-text />
+      </mom-form-group>
+
+      <mom-form-group label="Form label" show-bullet>
+        <mom-input-text />
+      </mom-form-group>
+
+      <mom-form-group label="Form label" show-bullet>
+        <mom-input-text />
+      </mom-form-group>
+    </div>
+
+    <h4 class="mom-h4">Optional form groups</h4>
+    <div class="snapshot">
+      <mom-form-group label="Form label" optional>
+        <mom-input-text />
+      </mom-form-group>
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

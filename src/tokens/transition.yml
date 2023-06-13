@@ -1,0 +1,18 @@
+#
+# TIMING TOKENS
+#
+
+props:
+  transition_duration_s:
+    value: "0.175s"
+    category: transition_duration
+  transition_duration_m:
+    value: "0.25s"
+    category: transition_duration
+  transition_timing_function_ease:
+    value: "ease"
+    category: transition_function
+
+global:
+  type: transition
+  category: transition

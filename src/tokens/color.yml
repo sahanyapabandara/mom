@@ -1,0 +1,336 @@
+#
+# COLOR TOKENS
+#
+
+props:
+  #Primary colors
+  color_blue_100:
+    value: "#00247B"
+    category: primary
+    order: 1
+  color_blue_90:
+    value: "#032F9A"
+    category: primary
+    order: 2
+  color_blue_80:
+    value: "#1E4BB8"
+    category: primary
+    order: 3
+  color_blue_70:
+    value: "#2563CC"
+    category: primary
+    order: 4
+  color_blue_60:
+    value: "#2C75DD"
+    category: primary
+    order: 5
+  color_blue_50:
+    value: "#3B8CF4"
+    category: primary
+    order: 6
+  color_blue_40:
+    value: "#4EA3FA"
+    category: primary
+    order: 7
+  color_blue_30:
+    value: "#72B9FF"
+    category: primary
+    order: 8
+  color_blue_20:
+    value: "#98CCFF"
+    category: primary
+    order: 9
+  color_blue_10:
+    value: "#C3E1FF"
+    category: primary
+    order: 10
+  color_blue_05:
+    value: "#E1F0FF"
+    category: primary
+    order: 11
+  color_blue_00:
+    value: "#F4FAFF"
+    category: primary
+    order: 12
+
+  #Secondary colors
+  color_cool_grey_100:
+    value: "#0C0D0D"
+    category: secondary
+    order: 1
+  color_cool_grey_90:
+    value: "#1D232B"
+    category: secondary
+    order: 2
+  color_cool_grey_80:
+    value: "#2D3642"
+    category: secondary
+    order: 3
+  color_cool_grey_70:
+    value: "#414C5A"
+    category: secondary
+    order: 4
+  color_cool_grey_60:
+    value: "#566271"
+    category: secondary
+    order: 5
+  color_cool_grey_50:
+    value: "#6D7989"
+    category: secondary
+    order: 6
+  color_cool_grey_40:
+    value: "#8692A1"
+    category: secondary
+    order: 7
+  color_cool_grey_30:
+    value: "#A0ABB8"
+    category: secondary
+    order: 8
+  color_cool_grey_20:
+    value: "#BBC5D0"
+    category: secondary
+    order: 9
+  color_cool_grey_10:
+    value: "#DAE0E8"
+    category: secondary
+    order: 10
+  color_cool_grey_05:
+    value: "#EEF1F4"
+    category: secondary
+    order: 11
+  color_cool_grey_00:
+    value: "#F9FAFB"
+    category: secondary
+    order: 12
+
+  #Neutral colors
+  color_black:
+    value: "#000000"
+    category: neutral_bw
+    order: 1
+  color_grey_80:
+    value: "#333333"
+    category: neutral
+    order: 2
+  color_grey_70:
+    value: "#666768"
+    category: neutral
+    order: 3
+  color_grey_60:
+    value: "#7F8182"
+    category: neutral
+    order: 4
+  color_grey_50:
+    value: "#A0A1A2"
+    category: neutral
+    order: 5
+  color_grey_40:
+    value: "#B5B6B7"
+    category: neutral
+    order: 6
+  color_grey_30:
+    value: "#D3D3D3"
+    category: neutral
+    order: 7
+  color_grey_20:
+    value: "#E2E2E2"
+    category: neutral
+    order: 8
+  color_grey_10:
+    value: "#EDEDED"
+    category: neutral
+    order: 9
+  color_grey_05:
+    value: "#F4F4F4"
+    category: neutral
+    order: 10
+  color_white:
+    value: "#FFFFFF"
+    category: neutral_bw
+    order: 10
+
+  #Support colors
+  #Green
+  color_green_90:
+    value: "#007200"
+    category: support_green
+    order: 1
+  color_green_80:
+    value: "#008700"
+    category: support_green
+    order: 2
+  color_green_70:
+    value: "#21AA00"
+    category: support_green
+    order: 3
+  color_green_60:
+    value: "#45BF00"
+    category: support_green
+    order: 4
+  color_green_50:
+    value: "#73D42B"
+    category: support_green
+    order: 5
+  color_green_40:
+    value: "#8FE74F"
+    category: support_green
+    order: 6
+  color_green_30:
+    value: "#A3F069"
+    category: support_green
+    order: 7
+  color_green_20:
+    value: "#C2F49C"
+    category: support_green
+    order: 8
+  color_green_10:
+    value: "#DBF8C3"
+    category: support_green
+    order: 9
+  color_green_05:
+    value: "#EEFFE0"
+    category: support_green
+    order: 10
+  color_green_00:
+    value: "#F8FFF2"
+    category: support_green
+    order: 11
+  #Red
+  color_red_90:
+    value: "#B02215"
+    category: support_red
+    order: 1
+  color_red_80:
+    value: "#CC3123"
+    category: support_red
+    order: 2
+  color_red_70:
+    value: "#E73929"
+    category: support_red
+    order: 3
+  color_red_60:
+    value: "#FF4A39"
+    category: support_red
+    order: 4
+  color_red_50:
+    value: "#FF5B4B"
+    category: support_red
+    order: 5
+  color_red_40:
+    value: "#FF6E61"
+    category: support_red
+    order: 6
+  color_red_30:
+    value: "#FF8479"
+    category: support_red
+    order: 7
+  color_red_20:
+    value: "#FFA198"
+    category: support_red
+    order: 8
+  color_red_10:
+    value: "#FFBEB8"
+    category: support_red
+    order: 9
+  color_red_05:
+    value: "#FEE7E6"
+    category: support_red
+    order: 10
+  color_red_00:
+    value: "#FEF5F5"
+    category: support_red
+    order: 11
+  #Orange
+  color_orange_100:
+    value: "#B14901"
+    category: support_orange
+    order: 1
+  color_orange_90:
+    value: "#C75100"
+    category: support_orange
+    order: 2
+  color_orange_80:
+    value: "#DC5A00"
+    category: support_orange
+    order: 3
+  color_orange_70:
+    value: "#E57300"
+    category: support_orange
+    order: 4
+  color_orange_60:
+    value: "#F08605"
+    category: support_orange
+    order: 5
+  color_orange_50:
+    value: "#F59D0B"
+    category: support_orange
+    order: 6
+  color_orange_40:
+    value: "#F5AB2B"
+    category: support_orange
+    order: 7
+  color_orange_30:
+    value: "#F7BA50"
+    category: support_orange
+    order: 8
+  color_orange_20:
+    value: "#F9CE82"
+    category: support_orange
+    order: 9
+  color_orange_10:
+    value: "#FBE1B3"
+    category: support_orange
+    order: 10
+  color_orange_05:
+    value: "#FDF3E1"
+    category: support_orange
+    order: 11
+  color_orange_00:
+    value: "#FFFBF4"
+    category: support_orange
+    order: 12
+  #Purple
+  color_purple_90:
+    value: "#663399"
+    category: support_purple
+    order: 1
+  color_purple_80:
+    value: "#8843CD"
+    category: support_purple
+    order: 2
+  color_purple_70:
+    value: "#A766E8"
+    category: support_purple
+    order: 3
+  color_purple_60:
+    value: "#BB7EED"
+    category: support_purple
+    order: 4
+  color_purple_50:
+    value: "#D1A2F8"
+    category: support_purple
+    order: 5
+  color_purple_40:
+    value: "#DDBCF8"
+    category: support_purple
+    order: 6
+  color_purple_30:
+    value: "#E8D1FA"
+    category: support_purple
+    order: 7
+  color_purple_20:
+    value: "#ECDCF9"
+    category: support_purple
+    order: 8
+  color_purple_10:
+    value: "#F2E6FB"
+    category: support_purple
+  color_purple_05:
+    value: "#F8EEFF"
+    category: support_purple
+  color_purple_00:
+    value: "#FCF8FF"
+    category: support_purple
+
+global:
+  type: color

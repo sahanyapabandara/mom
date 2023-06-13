@@ -1,0 +1,51 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomLink">
+    <h4 class="mom-h4">Link size</h4>
+    <div class="snapshot stack-y:24">
+      <mom-link text="Link text" size="m" />
+      <br />
+      <mom-link text="Link text" size="s" />
+      <br />
+      <mom-link text="Link text" size="l" />
+    </div>
+
+    <h4 class="mom-h4">Link with icon</h4>
+    <div class="snapshot stack-y:24">
+      <mom-link text="Back" icon="chevron-left" icon-position="left" />
+      <br />
+      <mom-link text="Next" icon="chevron-right" icon-position="right" />
+      <br />
+      <mom-link text="Search" icon="search" hide-text />
+      <br />
+      <mom-link text="Back" icon="chevron-left" icon-position="left" size="s" />
+      <br />
+      <mom-link text="Next" icon="chevron-right" icon-position="right" size="s" />
+      <br />
+      <mom-link text="Search" icon="search" hide-text size="s" />
+    </div>
+
+    <h4 class="mom-h4">Disabled link</h4>
+    <div class="snapshot"><mom-link text="Link text" disabled /></div>
+
+    <h4 class="mom-h4">Dark mode link</h4>
+    <div class="snapshot c:white bgc:black stack-y:24">
+      <mom-link text="Link text" dark-mode />
+      <br />
+      <mom-link text="Link text" dark-mode disabled />
+    </div>
+
+    <h4 class="mom-h4">Underline link</h4>
+    <div class="snapshot stack-y:24">
+      <mom-link text="Link text" underline />
+      <br />
+      <mom-link text="Link text" underline disabled />
+    </div>
+
+    <h4 class="mom-h4">Underline dark mode link</h4>
+    <div class="snapshot c:white bgc:black stack-y:24">
+      <mom-link text="Link text" underline dark-mode />
+      <br />
+      <mom-link text="Link text" underline dark-mode disabled />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

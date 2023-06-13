@@ -1,0 +1,23 @@
+/* GLOBAL FUNCTIONS
+--------------------------------------------- */
+
+/// Returns the value in rem for a given pixel value.
+/// @param {Number} $value - The pixel value to be converted.
+/// @return {Number} The converted value in rem.
+@function rem($value) {
+  @return $value / 16 * 1rem;
+}
+
+/// Create grid-width
+/// @param  {Number} grid-width value to set
+/// @return  {Number} The return grid width in %
+@function grid-width($value) {
+  @return map-get($tokens-map, "grid-col-" + $value);
+}
+
+/// Create component-width
+/// @param  {String} component-width value to set
+/// @return  {Number} The return component width in rem
+@function component-width($value) {
+  @return map-get($tokens-map, "component-width-" + $value);
+}

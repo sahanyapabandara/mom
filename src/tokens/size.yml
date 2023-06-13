@@ -1,0 +1,105 @@
+#
+# SIZE/WIDTH TOKENS
+#
+
+props:
+  #Wrapper width
+  wrapper_s:
+    value: "30rem"
+    category: wrapper_width
+  wrapper_m:
+    value: "45rem"
+    category: wrapper_width
+  wrapper_l:
+    value: "70rem"
+    category: wrapper_width
+  wrapper_full:
+    value: "100%"
+    category: wrapper_width
+
+  #Grid column width
+  grid_col_12:
+    value: "100%"
+    category: grid_width
+  grid_col_11:
+    value: "91.666%"
+    category: grid_width
+  grid_col_10:
+    value: "83.333%"
+    category: grid_width
+  grid_col_9:
+    value: "75%"
+    category: grid_width
+  grid_col_8:
+    value: "66.666%"
+    category: grid_width
+  grid_col_7:
+    value: "58.333%"
+    category: grid_width
+  grid_col_6:
+    value: "50%"
+    category: grid_width
+  grid_col_5:
+    value: "41.666%"
+    category: grid_width
+  grid_col_4:
+    value: "33.333%"
+    category: grid_width
+  grid_col_3:
+    value: "25%"
+    category: grid_width
+  grid_col_2:
+    value: "16.666%"
+    category: grid_width
+  grid_col_1:
+    value: "8.333%"
+    category: grid_width
+  gutter_width_l:
+    value: "1.5rem"
+    category: gutter_width
+  gutter_width_m:
+    value: "1.0rem"
+    category: gutter_width
+  gutter_width_s:
+    value: "0.5rem"
+    category: gutter_width
+  grid_column_margin:
+    value: "1.5rem"
+    category: grid_margin
+
+  #Component width
+  component_width_xs:
+    value: "4rem"
+    category: component_width
+  component_width_xs1:
+    value: "6rem"
+    category: component_width
+  component_width_s:
+    value: "10rem"
+    category: component_width
+  component_width_m:
+    value: "20rem"
+    category: component_width
+  component_width_l:
+    value: "30rem"
+    category: component_width
+  component_width_xl:
+    value: "45rem"
+    category: component_width
+  component_width_full:
+    value: "100%"
+    category: component_width
+
+  #Banner size
+  banner_sizes:
+    value: "m l xl full"
+    category: component_size
+  form_group_sizes:
+    value: "xs xs1 s m l xl full"
+    category: component_size
+  input_sizes:
+    value: "xs xs1 s m l xl full"
+    category: component_size
+
+global:
+  type: size

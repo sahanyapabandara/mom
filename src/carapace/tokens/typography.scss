@@ -1,0 +1,60 @@
+// Font sizes
+@include set(
+  font-size,
+  (
+    2xl: (
+      _: rem(28),
+      tablet: rem(36),
+    ),
+    xl: (
+      _: rem(24),
+      tablet: rem(28),
+    ),
+    l: (
+      _: rem(20),
+    ),
+    m: (
+      _: rem(16),
+    ),
+    s: (
+      _: rem(14),
+    ),
+    xs: rem(12),
+  )
+);
+
+// Line heights
+@include set(
+  line-height,
+  (
+    2xl: (
+      _: rem(36),
+      tablet: rem(40),
+    ),
+    xl: (
+      _: rem(32),
+      tablet: rem(36),
+    ),
+    l: (
+      _: rem(28),
+    ),
+    m: (
+      _: rem(24),
+    ),
+    s: (
+      _: rem(20),
+    ),
+    xs: rem(16),
+  )
+);
+
+// Font weights
+@include set(
+  font-weight,
+  (
+    light: 300,
+    regular: 400,
+    semibold: 600,
+    bold: 700,
+  )
+);

@@ -1,0 +1,86 @@
+{
+  "momaccordion": {
+    "edit": "Edit"
+  },
+  "momcard": {
+    "edit": "Edit",
+    "continue": "Continue"
+  },
+  "mominputautosuggest": {
+    "search": "Start typing to search..."
+  },
+  "mominputdropdownlist": {
+    "nomatches": "No matches found.",
+    "use": "Use"
+  },
+  "mominputtextarea": {
+    "characters": "characters",
+    "character": "character",
+    "left": "left"
+  },
+  "mommodal": {
+    "show": "Show modal"
+  },
+  "mompagination": {
+    "to": " to ",
+    "of": " of ",
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "momsummary": {
+    "edit": "Edit"
+  },
+  "momtable": {
+    "select": "Select ",
+    "check": "Check ",
+    "checkall": "Check all",
+    "empty": "No records found."
+  },
+  "momupload": {
+    "invalid_file_type": "You must upload only JPEG, JPG, PNG or PDF files.",
+    "invalid_character_length": "You must upload a file with a name that does not exceed 100 characters.",
+    "invalid_file_name": "You must upload a file with a name that does not contain special characters (e.g. @ / \\ *  # &).",
+    "limit_file_size": "The total size of your files must be less than x MB.",
+    "duplicate_file": "You must not upload more than 1 file with the same name.",
+    "empty_file": "You must upload a file larger than 0 bytes.",
+    "corrupted_file_error": "Your file failed to upload as it is corrupted.",
+    "pdf_encrypted_error": "You must upload a file that is not password protected."
+  },
+  "momuploaddropzone": {
+    "maintext": "Drag and drop or browse files.",
+    "subtext_part1": "Jpeg, png or pdf only. Total file size must not exceed ",
+    "subtext_part2": "MB."
+  },
+  "momuploadfilelist": {
+    "view": "View"
+  },
+  "mompagefooter": {
+    "lastupdated": "Last updated",
+    "sggov": "Government of Singapore."
+  },
+  "mompageheader": {
+    "masthead": "A Singapore Government Agency Website",
+    "logout": "Log out",
+    "lastsaved": "Last saved at",
+    "savedraft": "Save draft"
+  },
+  "landingpage": {
+    "start": "Start",
+    "note": "Things to note",
+    "duration1": "Takes about",
+    "duration2": "to complete."
+  },
+  "summarypage": {
+    "continue": "Continue",
+    "declaration": "Declaration",
+    "download": "Download form summary as PDF"
+  },
+  "acknowledgementpage": {
+    "print": "Print acknowledgement page",
+    "download": "Download acknowledgement as PDF",
+    "donext": "What do you want to do next?"
+  },
+  "outcomepage": {
+    "relatedlinks": "Related links"
+  }
+}

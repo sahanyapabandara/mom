@@ -1,0 +1,176 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomInputSelect">
+    <h4 class="mom-h4">Select input size</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-select
+        size="xs"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        size="xs1"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        size="s"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        size="m"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        size="l"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        size="xl"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        size="full"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Select input with placeholder</h4>
+    <div class="snapshot">
+      <mom-input-select
+        placeholder="Placeholder"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Select input with input state</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-select
+        input-state="disabled"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+      <mom-input-select
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Select input for table filter</h4>
+    <div class="snapshot">
+      <mom-input-select
+        size="s"
+        variant="filter"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+        ]"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

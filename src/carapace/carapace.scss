@@ -1,0 +1,43 @@
+// Import the Scarab Core library
+@import "@scarab/core/_";
+
+// Import your design token config
+@import "tokens/_";
+
+// Import the Carapace library
+@import "@scarab/carapace/_";
+
+// Color
+@import "@scarab/carapace/lib/modules/base/color";
+@import "@scarab/carapace/lib/modules/base/background-color";
+@import "@scarab/carapace/lib/modules/base/box-shadow";
+
+// Typography
+@import "@scarab/carapace/lib/modules/typography/type-scale";
+@import "@scarab/carapace/lib/modules/typography/font-size";
+@import "@scarab/carapace/lib/modules/typography/line-height";
+@import "@scarab/carapace/lib/modules/typography/font-style";
+@import "@scarab/carapace/lib/modules/typography/font-weight";
+@import "@scarab/carapace/lib/modules/typography/text-align";
+@import "@scarab/carapace/lib/modules/typography/text-transform";
+@import "@scarab/carapace/lib/modules/typography/white-space";
+@import "@scarab/carapace/lib/modules/typography/word-break";
+
+// Layout
+@import "@scarab/carapace/lib/modules/layout/align-content";
+@import "@scarab/carapace/lib/modules/layout/align-items";
+@import "@scarab/carapace/lib/modules/layout/align-self";
+@import "@scarab/carapace/lib/modules/layout/clear";
+@import "@scarab/carapace/lib/modules/layout/display";
+@import "@scarab/carapace/lib/modules/layout/flex-direction";
+@import "@scarab/carapace/lib/modules/layout/flex-wrap";
+@import "@scarab/carapace/lib/modules/layout/justify-content";
+@import "@scarab/carapace/lib/modules/layout/margin";
+@import "@scarab/carapace/lib/modules/layout/negative-margin";
+@import "@scarab/carapace/lib/modules/layout/padding";
+@import "@scarab/carapace/lib/modules/layout/vertical-align";
+
+// Structure
+@import "@scarab/carapace/lib/modules/structure/contain";
+@import "@scarab/carapace/lib/modules/structure/wrap";
+@import "@scarab/carapace/lib/modules/structure/stack";

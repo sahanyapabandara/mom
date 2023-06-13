@@ -1,0 +1,268 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomInputRadio">
+    <h4 class="mom-h4">Radio buttons variant</h4>
+    <div class="snapshot stack-y:48">
+      <mom-input-radio
+        name="input-radio1"
+        value="2"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-radio
+        name="input-radio2"
+        variant="horizontal"
+        value="2"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-radio
+        name="input-radio3"
+        variant="card"
+        value="2"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Disabled radio buttons</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-radio
+        name="input-radio4"
+        value="2"
+        disabled
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-radio
+        name="input-radio5"
+        variant="horizontal"
+        value="2"
+        disabled
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-radio
+        name="input-radio6"
+        variant="card"
+        value="2"
+        disabled
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+            },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+            },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Radio buttons with input state</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-radio
+        name="input-radio7"
+        value="2"
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-radio
+        name="input-radio8"
+        variant="horizontal"
+        value="2"
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-radio
+        name="input-radio9"
+        variant="card"
+        value="2"
+        input-state="error"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+            },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+            },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+      <mom-input-radio
+        name="input-radio10"
+        value="2"
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <mom-input-radio
+        name="input-radio11"
+        variant="horizontal"
+        value="2"
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+          },
+          {
+            label: 'Option two',
+            value: '2',
+          },
+          {
+            label: 'Option three',
+            value: '3',
+          },
+        ]"
+      />
+      <br />
+      <mom-input-radio
+        name="input-radio12"
+        variant="card"
+        value="2"
+        input-state="warning"
+        :options="[
+          {
+            label: 'Option one',
+            value: '1',
+            description: 'Description',
+            supportingText: 'Supporting text',
+            },
+          {
+            label: 'Option two',
+            value: '2',
+            description: 'Description',
+            },
+          {
+            label: 'Option three',
+            value: '3',
+            supportingText: 'Supporting text',
+          },
+        ]"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

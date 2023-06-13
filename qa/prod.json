@@ -1,0 +1,36 @@
+{
+  "momaccordion": {
+    "edit": null
+  },
+  "momcard": {
+    "edit": null,
+    "continue": null
+  },
+  "momsummary": {
+    "edit": null
+  },
+  "mompageheader": {
+    "username": null,
+    "companyname": null,
+    "companyuen": null,
+    "logout": null,
+    "savedraft": null,
+    "lastsaved": null
+  },
+  "acknowledgementpage": {
+    "print": null,
+    "download": null
+  },
+  "landingpage": {
+    "start": null
+  },
+  "summarypage": {
+    "checkbox": null,
+    "continue": null,
+    "print": null,
+    "download": null
+  },
+  "blockerpage": {
+    "title": null
+  }
+}

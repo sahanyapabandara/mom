@@ -1,0 +1,19 @@
+#
+# Z-INDEX TOKENS
+#
+
+props:
+  z_index_notification:
+    value: "700"
+  z_index_overlay:
+    value: "600"
+  z_index_tooltip:
+    value: "500"
+  z_index_dropdown:
+    value: "400"
+  z_index_sticky:
+    value: "300"
+
+global:
+  type: z-index
+  category: z-index

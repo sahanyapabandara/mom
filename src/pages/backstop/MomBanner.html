@@ -1,0 +1,44 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomBanner">
+    <h4 class="mom-h4">Banner size</h4>
+    <div class="snapshot">
+      <mom-banner size="m"> <p class="mom-p">This is a M size banner.</p> </mom-banner>
+      <mom-banner size="l"> <p class="mom-p">This is a L size banner.</p> </mom-banner>
+      <mom-banner size="xl"> <p class="mom-p">This is a XL size banner.</p> </mom-banner>
+      <mom-banner size="full"> <p class="mom-p">This is a full width banner.</p> </mom-banner>
+    </div>
+
+    <h4 class="mom-h4">Banner type</h4>
+    <div class="snapshot">
+      <mom-banner type="info"> <p class="mom-p">This is an info banner.</p> </mom-banner>
+      <mom-banner type="error"> <p class="mom-p">This is an error banner.</p> </mom-banner>
+      <mom-banner type="warning"> <p class="mom-p">This is a warning banner.</p> </mom-banner>
+      <mom-banner type="success"> <p class="mom-p">This is a success banner.</p> </mom-banner>
+    </div>
+
+    <h4 class="mom-h4">Banner variant</h4>
+    <div class="snapshot">
+      <mom-banner variant="page-banner" title="Page banner title" size="full">
+        <p class="mom-p">This is a page banner.</p>
+      </mom-banner>
+    </div>
+
+    <h4 class="mom-h4">Notification</h4>
+    <div class="snapshot">
+      <mom-banner size="m" show-close-button>
+        <p class="mom-p">This is a notification.</p>
+      </mom-banner>
+    </div>
+
+    <h4 class="mom-h4">Draft message</h4>
+    <div class="snapshot">
+      <mom-banner size="m" type="delete" show-undo-button>
+        <p class="mom-p">This is a draft message.</p>
+      </mom-banner>
+
+      <mom-banner size="m" type="undo">
+        <p class="mom-p">This is a draft message.</p>
+      </mom-banner>
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

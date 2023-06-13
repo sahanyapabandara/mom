@@ -1,0 +1,75 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomAccordion">
+    <h4 class="mom-h4">Default accordion</h4>
+    <div class="snapshot p:24">
+      <mom-accordion open-child-index="1">
+        <mom-accordion-item title="Panel Title 1" status="complete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div slot="summary"><p class="mom-p">Accordion summary</p></div>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 2" status="incomplete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 3">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 4" status="none">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+      </mom-accordion>
+    </div>
+
+    <h4 class="mom-h4">Card style accordion</h4>
+    <div class="snapshot p:24">
+      <mom-accordion open-child-index="1" variant="card">
+        <mom-accordion-item title="Panel Title 1" status="complete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div slot="summary"><p class="mom-p">Accordion summary</p></div>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 2" status="incomplete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 3">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 4" status="none">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+      </mom-accordion>
+    </div>
+
+    <h4 class="mom-h4">Disabled accordion</h4>
+    <div class="snapshot p:24 stack-y:24">
+      <mom-accordion open-child-index="1" disabled>
+        <mom-accordion-item title="Panel Title 1" status="complete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div slot="summary"><p class="mom-p">Accordion summary</p></div>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 2" status="incomplete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 3">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 4" status="none">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+      </mom-accordion>
+      <mom-accordion open-child-index="1" variant="card" disabled>
+        <mom-accordion-item title="Panel Title 1" status="complete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div slot="summary"><p class="mom-p">Accordion summary</p></div>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 2" status="incomplete">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 3">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+        <mom-accordion-item title="Panel Title 4" status="none">
+          <p class="mom-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </mom-accordion-item>
+      </mom-accordion>
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

@@ -1,0 +1,51 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomUpload">
+    <h4 class="mom-h4">File upload</h4>
+    <div class="snapshot"><mom-upload url="https://httpbin.org/post" /></div>
+
+    <h4 class="mom-h4">File upload with user defined text</h4>
+    <div class="snapshot">
+      <mom-upload url="https://httpbin.org/post" main-text="Upload files." sub-text="Pdf only." />
+    </div>
+
+    <h4 class="mom-h4">File upload with input state</h4>
+    <div class="snapshot stack-y:24">
+      <mom-upload url="https://httpbin.org/post" input-state="disabled" />
+      <mom-upload url="https://httpbin.org/post" input-state="error" />
+      <mom-upload url="https://httpbin.org/post" input-state="warning" />
+    </div>
+
+    <h4 class="mom-h4">File upload with uploaded files list</h4>
+    <div class="snapshot">
+      <mom-upload
+        url="https://httpbin.org/post"
+        :value="[
+          {
+            id: '1',
+            name: 'Test File 1.jpg',
+            progress: 100,
+            size: 102400,
+            type: 'image/jpeg',
+            uploadCompleted: true
+          },
+          {
+            id: '2',
+            name: 'Test File 2.jpg',
+            progress: 0,
+            size: 102400,
+            type: 'image/jpeg',
+            uploadCompleted: false
+          },
+          {
+            id: '3',
+            name: 'Test File 3.jpg',
+            progress: 50,
+            size: 102400,
+            type: 'image/jpeg',
+            uploadCompleted: false
+          }
+        ]"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

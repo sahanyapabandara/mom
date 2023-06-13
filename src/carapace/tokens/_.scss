@@ -1,0 +1,15 @@
+///
+// Files in this folder populate the Scarab Inventory
+// with tokens from the design system.
+
+// Set Scarab options
+// __________________
+@include set-option(namescheme, states, ());
+
+// Load all token configuration
+// ————————————————————————————
+
+@import "colors";
+@import "layout";
+@import "typography";
+@import "appearance";

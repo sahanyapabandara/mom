@@ -1,0 +1,97 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomPageHeader">
+    <h4 class="mom-h4">Simple page header</h4>
+    <div class="snapshot"><mom-page-header title="Page title" /></div>
+
+    <h4 class="mom-h4">Page header with breadcrumb</h4>
+    <div class="snapshot">
+      <mom-page-header
+        title="Page title"
+        :breadcrumb="[
+          {
+            text: '<em>myMOM</em> Portal',
+            href: 'javascript:void(0);',
+          },
+          {
+            text: 'Quick Menu',
+            href: 'javascript:void(0);',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Page header with user info</h4>
+    <div class="snapshot">
+      <mom-page-header
+        title="Page title"
+        user-name="User Name"
+        company-name="Company name"
+        branch-name="Branch name"
+        company-uen="202001234A-01-001"
+        allow-logout
+      />
+    </div>
+
+    <h4 class="mom-h4">Page header with sticky bar</h4>
+    <div class="snapshot">
+      <mom-page-header
+        title="Page title"
+        subtitle="Page subtitle"
+        has-save-button
+        last-saved-time="1 Jan 2020, 12:00pm"
+      />
+    </div>
+
+    <h4 class="mom-h4">Page header with full feature</h4>
+    <div class="snapshot">
+      <mom-page-header
+        title="Page title"
+        subtitle="Page subtitle"
+        has-save-button
+        last-saved-time="1 Jan 2020, 12:00pm"
+        user-name="User Name"
+        company-name="Company name"
+        branch-name="Branch name"
+        company-uen="202001234A-01-001"
+        allow-logout
+        :breadcrumb="[
+          {
+            text: 'Dashboard',
+            href: '#',
+          },
+          {
+            text: 'Navigation',
+            href: '#',
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Page header with language dropdown</h4>
+    <div class="snapshot">
+      <mom-page-header
+        title="Page title"
+        showLanguage
+        :languages="[
+          {
+            text: 'English',
+            code: 'en',
+          },
+          {
+            text: 'Chinese',
+            code: 'cn',
+          },
+          {
+            text: 'Malay',
+            code: 'my',
+          },
+          {
+            text: 'Tamil',
+            code: 'ta',
+          }
+        ]"
+        current-language="en"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

@@ -1,0 +1,40 @@
+#
+# APPEARANCE TOKENS
+#
+
+props:
+  #Border radius
+  border_radius_corner_l:
+    value: "8px"
+    category: "border_radius"
+  border_radius_corner:
+    value: "4px"
+    category: "border_radius"
+  border_radius_circle:
+    value: "50%"
+    category: "border_radius"
+
+  #Box shadow
+  box_shadow_s:
+    value: "(0px 0px 2px rgba(0, 0, 0, 0.1), 0px 1px 4px rgba(0, 0, 0, 0.12))"
+    category: box_shadow
+  box_shadow_m:
+    value: "(0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12))"
+    category: box_shadow
+  box_shadow_l:
+    value: "(0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.14))"
+    category: box_shadow
+  box_shadow_xl:
+    value: "(0px 11px 15px rgba(0, 0, 0, 0.2), 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12))"
+    category: box_shadow
+  box_shadow_header:
+    value: "(0px 2px 2px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.1))"
+    category: box_shadow
+
+  #Opacity
+  opacity_disabled:
+    value: "0.5"
+    category: "opacity"
+
+global:
+  type: appearance

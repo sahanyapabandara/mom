@@ -1,0 +1,23 @@
+@import "../assets/tokens/tokens";
+@import "../assets/tokens/tokens.map";
+@import "../styles/mixins";
+@import "../styles/functions";
+
+$body-text: $color-cool-grey-100;
+$heading-text: $color-cool-grey-80;
+$focus-outline: rem(2) solid $color-blue-20;
+$input-text-disabled: $color-grey-50;
+$placeholder-text: $color-cool-grey-50;
+$placeholder-disabled: $color-grey-40;
+$input-border: $color-cool-grey-20;
+$input-border-focus: $color-blue-50;
+$input-border-error: $color-red-70;
+$input-border-warning: $color-orange-70;
+$input-border-disabled: $color-grey-30;
+$input-bg-disabled: $color-grey-10;
+$input-icon: $color-cool-grey-50;
+$input-icon-error: $color-red-70;
+$input-icon-hover: $color-blue-60;
+$input-icon-checked: $color-blue-40;
+$input-icon-warning: $color-orange-70;
+$input-icon-disabled: $color-grey-40;

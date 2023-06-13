@@ -1,0 +1,166 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomSummary">
+    <h4 class="mom-h4">Default summary</h4>
+    <div class="snapshot">
+      <mom-summary
+        title="Section title"
+        :items="[
+          {
+            label: 'Label 1',
+            description: 'Description 1',
+          },
+          {
+            label: 'Label 2',
+            description: ['Description 2a', 'Description 2b'],
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Summary with subsections</h4>
+    <div class="snapshot">
+      <mom-summary
+        title="Section title (prop)"
+        use-subsection
+        :items="[
+        {
+            items: [
+              {
+                label: 'Label 1',
+                description: 'Description 1',
+              },
+              {
+                label: 'Label 2',
+                description: ['Description 2a', 'Description 2b'],
+              },
+            ]
+          },
+          {
+            title: 'Subsection title 2',
+            items: [
+              {
+                label: 'Label 3',
+                description: 'Description 3',
+              },
+              {
+                label: 'Label 4',
+                description: ['Description 4a', 'Description 4b'],
+              },
+            ]
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Summary with slot content</h4>
+    <div class="snapshot">
+      <mom-summary title="Summary title">
+        <mom-summary-subsection title="Subsection (paragraph and list item)">
+          <mom-summary-item label="Label (paragraph)">
+            <p class="mom-p">Paragraph</p>
+          </mom-summary-item>
+          <mom-summary-item label="Label (list item)">
+            <ul class="mom-ul">
+              <li>List item 1</li>
+              <li>List item 2</li>
+            </ul>
+          </mom-summary-item>
+        </mom-summary-subsection>
+        <mom-summary-subsection title="Subsection (table)">
+          <mom-summary-item label="Label (table)" description-type="others">
+            <mom-table>
+              <mom-table-thead slot="header">
+                <mom-table-tr row-type="header">
+                  <mom-table-th>Column Header 1</mom-table-th>
+                  <mom-table-th>Column Header 2</mom-table-th>
+                </mom-table-tr>
+              </mom-table-thead>
+              <mom-table-tbody slot="body">
+                <mom-table-tr>
+                  <mom-table-td>Row 1 Column 1</mom-table-td>
+                  <mom-table-td>Row 1 Column 2</mom-table-td>
+                </mom-table-tr>
+                <mom-table-tr>
+                  <mom-table-td>Row 2 Column 1</mom-table-td>
+                  <mom-table-td>Row 2 Column 2</mom-table-td>
+                </mom-table-tr>
+              </mom-table-tbody>
+            </mom-table>
+          </mom-summary-item>
+        </mom-summary-subsection>
+        <mom-summary-subsection title="Subsection (thumbnails)">
+          <mom-summary-item label="Label (thumbnails)" description-type="others">
+            <mom-image-modal
+              :images="[
+                {
+                  url: 'https://media.aintitcool.com/media/_versions/2019/dannie/detpika_large.jpg',
+                  filename: 'filename 1.jpg',
+                },
+                {
+                  url: 'https://m.media-amazon.com/images/M/MV5BNDU4Mzc3NzE5NV5BMl5BanBnXkFtZTgwMzE1NzI1NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
+                  filename: 'filename 2.jpg',
+                },
+              ]"
+            />
+          </mom-summary-item>
+        </mom-summary-subsection>
+      </mom-summary>
+    </div>
+
+    <h4 class="mom-h4">Summary without edit link</h4>
+    <div class="snapshot">
+      <mom-summary
+        title="Summary section title"
+        :items="[
+          {
+            label: 'Label 1',
+            description: 'Description 1',
+          },
+          {
+            label: 'Label 2',
+            description: ['Description 2a', 'Description 2b'],
+          },
+        ]"
+        :show-edit="false"
+      />
+    </div>
+
+    <h4 class="mom-h4">Summary items with bullet</h4>
+    <div class="snapshot">
+      <mom-summary
+        title="Summary section title"
+        :items="[
+          {
+            label: 'Label 1',
+            description: 'Description 1',
+            showBullet: true,
+          },
+          {
+            label: 'Label 2',
+            description: ['Description 2a', 'Description 2b'],
+            showBullet: true,
+          },
+        ]"
+      />
+    </div>
+
+    <h4 class="mom-h4">Summary items with tooltip</h4>
+    <div class="snapshot">
+      <mom-summary
+        title="Summary section title"
+        :items="[
+            {
+              label: 'Label 1',
+              description: 'Description 1',
+              tooltip: 'Tooltip text',
+            },
+            {
+              label: 'Label 2',
+              description: ['Description 2a', 'Description 2b'],
+              tooltip: 'Tooltip text',
+            },
+          ]"
+      />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

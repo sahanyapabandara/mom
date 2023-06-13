@@ -1,0 +1,506 @@
+@import "../src/assets/css/global.min.css";
+@import "../src/assets/css/carapace.min.css";
+
+$body-text: $color-cool-grey-100;
+$heading-text: $color-cool-grey-80;
+$sidebar-text: $color-cool-grey-05;
+$sidebar-bg: $color-cool-grey-90;
+$view-code: $color-orange-50;
+
+/* TYPOGRAPHY
+--------------------------------------------- */
+body {
+  color: $body-text;
+}
+
+p[class^="rsg--para"] {
+  @include font-size(m);
+  @include line-height(m);
+  color: inherit;
+  margin-bottom: rem(24);
+  max-width: rem(720);
+}
+
+ul[class^="rsg--list"],
+ol[class^="rsg--list"] {
+  @include font-size(m);
+  @include line-height(m);
+  color: inherit;
+  margin-bottom: rem(24);
+  max-width: rem(720);
+  padding-left: rem(28);
+
+  li {
+    @include stack-margin(rem(4));
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p[class^="rsg--para"] + & {
+    margin-top: rem(-20);
+  }
+}
+
+ul[class^="rsg--list"] {
+  list-style-type: disc;
+}
+
+ol[class^="rsg--list"] {
+  list-style-type: decimal;
+}
+
+blockquote[class^="rsg--blockquote"] {
+  width: rem(600);
+  margin: 0;
+  margin-bottom: rem(24);
+  background-color: $color-orange-05;
+  padding: rem(16);
+  font-weight: $font-weight-semibold;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a[class^="rsg--link"] {
+  color: $color-blue-80 !important;
+  text-decoration: none;
+
+  &:active {
+    color: $color-blue-90 !important;
+  }
+}
+
+pre[class*="rsg--pre"] {
+  @include font-size(xs);
+  @include line-height(xs);
+  margin-bottom: rem(24);
+  padding: rem(16);
+  max-width: rem(720);
+  color: $color-cool-grey-60;
+  background-color: $color-cool-grey-05;
+  border: rem(1) solid $color-cool-grey-10;
+  border-radius: $border-radius-corner;
+
+  .function {
+    color: $color-red-50 !important;
+  }
+
+  .string {
+    color: $color-green-70 !important;
+  }
+
+  .comment {
+    color: $color-cool-grey-30 !important;
+  }
+
+  .punctuation {
+    color: $color-cool-grey-30 !important;
+  }
+}
+
+code[class^="rsg--code"] {
+  @include font-size(s);
+  @include line-height(s);
+  color: $color-cool-grey-60;
+  padding: rem(4);
+  background-color: $color-cool-grey-05;
+  border-radius: $border-radius-corner;
+}
+
+strong[class*="rsg--strong"] {
+  font-weight: $font-weight-semibold;
+}
+
+strong[class*="rsg--baseColor"] {
+  color: inherit;
+}
+
+div[class^="rsg--para"] {
+  @include stack-margin(rem(24));
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+input[class^="rsg--input"] {
+  @include font-size(m);
+  padding: rem(8) rem(16);
+  color: $color-cool-grey-80;
+  background-color: $color-white;
+  border: rem(1) solid $color-cool-grey-20;
+  border-radius: $border-radius-corner;
+
+  &:focus {
+    border: rem(1) solid $color-cool-grey-20;
+    box-shadow: none;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-cool-grey-50;
+  }
+
+  &::placeholder {
+    color: $color-cool-grey-50;
+    opacity: 1;
+  }
+}
+
+/* HEADINGS
+--------------------------------------------- */
+div[class^="rsg--wrapper"] {
+  h1[class^="rsg--heading"],
+  h2[class^="rsg--heading"] {
+    @include font-size(2xl);
+    @include line-height(2xl);
+    color: $heading-text;
+    letter-spacing: $letter-spacing-s;
+    font-weight: $font-weight-regular;
+    margin-bottom: 0;
+
+    a:hover {
+      color: inherit;
+      text-decoration: none;
+      cursor: default;
+    }
+  }
+}
+
+div[class*="rsg--spacing"] {
+  margin-bottom: rem(16);
+
+  h2[class^="rsg--heading"] {
+    @include font-size(xl);
+    @include line-height(xl);
+    letter-spacing: $letter-spacing-s;
+    font-weight: $font-weight-semibold;
+    color: inherit;
+    margin-top: rem(64);
+    padding-bottom: rem(8);
+    border-bottom: rem(2) solid $color-cool-grey-20;
+  }
+
+  h3[class^="rsg--heading"] {
+    @include font-size(l);
+    @include line-height(l);
+    font-weight: $font-weight-semibold;
+    color: inherit;
+    margin-top: rem(48);
+    max-width: rem(720);
+  }
+
+  h4[class^="rsg--heading"] {
+    @include font-size(m);
+    @include line-height(m);
+    color: inherit;
+    font-weight: $font-weight-semibold;
+    margin-top: rem(24);
+    max-width: rem(720);
+  }
+}
+
+// /* LAYOUT
+// --------------------------------------------- */
+main[class^="rsg--content"] {
+  padding: 0;
+
+  header[class^="rsg--header"] {
+    margin: 0;
+  }
+
+  div[class^="rsg--wrapper"] {
+    padding: rem(32) rem(32);
+    margin: 0;
+    background-color: $color-blue-00;
+  }
+
+  article[class^="rsg--root"] {
+    padding: rem(32);
+    max-width: rem(1344);
+  }
+
+  div[class^="rsg--tabs"] {
+    padding: 0 rem(32);
+    margin-bottom: rem(32);
+  }
+
+  div[data-testid*="-container"] {
+    display: flex;
+    flex-direction: column;
+
+    header[class^="rsg--header"] {
+      order: 1;
+    }
+
+    article[class^="rsg--root"] {
+      order: 2;
+    }
+
+    div[class^="rsg--tabs"] {
+      order: 3;
+    }
+  }
+}
+
+/* TABLES
+--------------------------------------------- */
+table[class^="rsg--table"],
+table.ComponentList,
+table.TemplateList,
+table.AttributeList {
+  width: 100%;
+  table-layout: fixed;
+  @include stack-margin(rem(24));
+
+  thead {
+    border: none;
+  }
+
+  th {
+    @include font-size(m);
+    @include line-height(m);
+    font-weight: $font-weight-semibold;
+    padding: rem(12);
+    background-color: $color-blue-05;
+    color: $color-blue-100;
+    vertical-align: top;
+    text-align: left;
+
+    &:first-child {
+      border-top-left-radius: $border-radius-corner;
+      border-bottom-left-radius: $border-radius-corner;
+    }
+
+    &:last-child {
+      border-top-right-radius: $border-radius-corner;
+      border-bottom-right-radius: $border-radius-corner;
+    }
+  }
+
+  tr {
+    border-bottom: rem(1) solid $color-cool-grey-10;
+
+    thead & {
+      border: none;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  td {
+    @include font-size(s);
+    @include line-height(s);
+    padding: rem(12);
+    color: inherit;
+    vertical-align: top;
+
+    p[class^="rsg--para"] {
+      @include font-size(s);
+      @include line-height(s);
+    }
+  }
+}
+
+/* SIDEBAR
+--------------------------------------------- */
+div[class^="rsg--sidebar"] {
+  background-color: $sidebar-bg;
+  border: none;
+  z-index: 400;
+
+  div[class^="rsg--logo"] {
+    padding: rem(24) rem(24) rem(16);
+    border-bottom: rem(1) solid $color-cool-grey-30;
+
+    h1[class^="rsg--logo"] {
+      @include font-size(l);
+      @include line-height(l);
+      color: $sidebar-text;
+    }
+  }
+
+  p[class^="rsg--version"] {
+    @include font-size(xs);
+    @include line-height(xs);
+    padding: rem(4) rem(8);
+    margin-top: rem(8);
+    color: $sidebar-text;
+    display: inline-flex;
+    border: rem(1) solid $color-cool-grey-30;
+    border-radius: $border-radius-corner;
+  }
+
+  nav {
+    padding: rem(24);
+
+    div[class^="rsg--search"] {
+      margin-bottom: rem(24);
+      padding: rem(0);
+    }
+
+    a[class^="rsg--link"] {
+      display: block;
+      color: $color-blue-20 !important;
+
+      &:active {
+        color: $color-blue-10 !important;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    ul[class^="rsg--list"] {
+      padding-left: rem(8);
+
+      li[class^="rsg--item"] {
+        @include font-size(s);
+        @include line-height(s);
+        font-weight: $font-weight-regular;
+        display: block;
+        margin: 0;
+        @include stack-margin(rem(4));
+
+        &[class*="rsg--isSelected"] {
+          font-weight: $font-weight-semibold;
+        }
+      }
+
+      a[class^="rsg--link"] {
+        @include stack-margin(rem(4));
+      }
+    }
+
+    > ul[class^="rsg--list"] {
+      padding-left: 0;
+
+      > li[class^="rsg--item"] {
+        @include font-size(m);
+        @include line-height(m);
+        font-weight: $font-weight-semibold;
+        @include stack-margin(rem(16));
+
+        &[class*="rsg--isSelected"] {
+          font-weight: $font-weight-bold;
+        }
+
+        > a[class^="rsg--link"] {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+/* CODE, COMPONENT PREVIEWS & EDITORS
+--------------------------------------------- */
+div[class^="rsg--preview"] {
+  display: block;
+  width: 100%;
+  padding: rem(24);
+  border: rem(1) solid $color-cool-grey-10;
+  border-radius: $border-radius-corner;
+  background-color: $color-cool-grey-00;
+}
+
+div[class^="rsg--controls"] {
+  margin-bottom: 0;
+}
+
+button[class^="rsg--button"] {
+  @include font-size(s);
+  @include line-height(s);
+  color: $view-code;
+  text-transform: uppercase;
+  padding: rem(4) 0;
+  transition: none;
+}
+
+button[class*="rsg--isActive"] {
+  margin-bottom: rem(8);
+  border-bottom: rem(2) solid $view-code;
+}
+
+div[class^="rsg--tabs"] {
+  max-width: rem(1344);
+
+  code[class^="rsg--name"],
+  span[class^="rsg--type"] {
+    @include font-size(s);
+    @include line-height(s);
+  }
+
+  code[class^="rsg--name"] {
+    color: $color-green-70;
+  }
+
+  div[class^="rsg--type"] {
+    margin: rem(8) 0 0;
+    opacity: 1;
+  }
+
+  span[class^="rsg--type"] {
+    color: $color-blue-60;
+  }
+}
+
+div.prism-editor {
+  @include font-size(xs);
+  @include line-height(xs);
+  border-radius: $border-radius-corner;
+  background-color: $color-cool-grey-90;
+
+  textarea {
+    border: none !important;
+    caret-color: $color-white;
+  }
+}
+
+/* HIDDEN STYLEGUIDIST FUNCTIONALITY
+--------------------------------------------- */
+div[class^="rsg--pathline"],
+div[class^="rsg--toolbar"],
+div[class^="rsg--docs"],
+footer[class^="rsg--root"],
+a[href*="/#/Styleguide%20components"] {
+  display: none !important;
+}
+
+/* EXCLUSIVE FOR DOCUMENTATION
+--------------------------------------------- */
+.grid-demo {
+  @include font-size(xs);
+  @include line-height(xs);
+  padding: rem(8);
+  text-align: center;
+
+  .MomGridColumn:nth-child(odd) > & {
+    background-color: $color-orange-10;
+  }
+
+  .MomGridColumn:nth-child(even) > & {
+    background-color: $color-green-10;
+  }
+}
+
+.overlay {
+  left: rem(250) !important;
+  width: calc(100% - #{rem(250)}) !important;
+
+  @media (max-width: rem(600)) {
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+portal {
+  display: block;
+}

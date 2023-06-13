@@ -1,0 +1,304 @@
+:root {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: $focus-outline;
+  outline-offset: 0;
+
+  .remove-outline & {
+    outline: none !important;
+  }
+}
+
+// Remove Mozilla inner dotted focus ring
+::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  @include font-size(m);
+  @include line-height(m);
+  font-family: $font-family;
+  color: $body-text;
+
+  @media print {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0mm auto !important;
+  }
+}
+
+// Headings
+.mom-h1 {
+  @include font-size(2xl);
+  @include line-height(2xl);
+  letter-spacing: $letter-spacing-s;
+  color: $heading-text;
+}
+
+.mom-h2 {
+  @include font-size(xl);
+  @include line-height(xl);
+  letter-spacing: $letter-spacing-s;
+}
+
+.mom-h3 {
+  @include font-size(l);
+  @include line-height(l);
+}
+
+.mom-h4 {
+  @include font-size(m);
+  @include line-height(m);
+}
+
+.mom-h1,
+.mom-h2,
+.mom-h3,
+.mom-h4 {
+  @include stack-margin(rem(16));
+  font-weight: $font-weight-semibold;
+  max-width: rem(720);
+}
+
+// Paragraph text
+.mom-p {
+  @include font-size(m);
+  @include line-height(m);
+}
+
+.mom-p-s {
+  @include font-size(s);
+  @include line-height(s);
+}
+
+.mom-p,
+.mom-p-s {
+  @include stack-margin(rem(24));
+  max-width: rem(720);
+}
+
+// List
+.mom-ul,
+.mom-ul-disc,
+.mom-ul-circle,
+.mom-ul-square,
+.mom-ol,
+.mom-ol-alpha,
+.mom-ol-decimal,
+.mom-ol-roman {
+  @include font-size(m);
+  @include line-height(m);
+}
+
+.mom-ul-s,
+.mom-ul-s-disc,
+.mom-ul-s-circle,
+.mom-ul-s-square,
+.mom-ol-s,
+.mom-ol-s-alpha,
+.mom-ol-s-decimal,
+.mom-ol-s-roman {
+  @include font-size(s);
+  @include line-height(s);
+}
+
+.mom-ul,
+.mom-ul-disc,
+.mom-ul-circle,
+.mom-ul-square,
+.mom-ol,
+.mom-ol-alpha,
+.mom-ol-decimal,
+.mom-ol-roman,
+.mom-ul-s,
+.mom-ul-s-disc,
+.mom-ul-s-circle,
+.mom-ul-s-square,
+.mom-ol-s,
+.mom-ol-s-alpha,
+.mom-ol-s-decimal,
+.mom-ol-s-roman {
+  @include stack-margin(rem(24));
+  max-width: rem(720);
+  padding-left: rem(28);
+  list-style-type: none;
+
+  li {
+    @include stack-margin(rem(4));
+  }
+
+  .mom-p + &,
+  .mom-p-s + & {
+    margin-top: rem(-20);
+  }
+}
+
+.mom-ul,
+.mom-ul-s,
+.mom-ul-disc,
+.mom-ul-s-disc {
+  list-style-type: disc;
+}
+
+.mom-ul-circle,
+.mom-ul-s-circle {
+  list-style-type: circle;
+}
+
+.mom-ul-square,
+.mom-ul-s-square {
+  list-style-type: square;
+}
+
+.mom-ol,
+.mom-ol-s,
+.mom-ol-alpha,
+.mom-ol-s-alpha,
+.mom-ol-decimal,
+.mom-ol-s-decimal {
+  list-style-type: none;
+
+  > li:before {
+    display: inline-flex;
+    width: rem(24);
+    margin-left: rem(-28);
+    margin-right: rem(4);
+  }
+}
+
+.mom-ol,
+.mom-ol-s,
+.mom-ol-alpha,
+.mom-ol-s-alpha {
+  counter-reset: alpha;
+
+  > li:before {
+    counter-increment: alpha;
+    content: "(" counter(alpha, lower-alpha) ")";
+  }
+}
+
+.mom-ol-decimal,
+.mom-ol-s-decimal {
+  counter-reset: decimal;
+
+  > li:before {
+    counter-increment: decimal;
+    content: counter(decimal) ".";
+  }
+}
+
+.mom-ol-roman,
+.mom-ol-s-roman {
+  list-style-type: lower-roman;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: $font-weight-semibold;
+}
+
+em {
+  font-style: italic;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: $color-cool-grey-50;
+}
+
+.prewrap {
+  white-space: pre-wrap;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.alphareset {
+  counter-reset: alpha;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(16);
+  z-index: $z-index-overlay;
+}
+
+// Vue transitions
+.mom-transition-fade-enter-active,
+.mom-transition-fade-leave-active {
+  transition: opacity $transition-duration-s $transition-timing-function-ease;
+}
+
+.mom-transition-fade-enter,
+.mom-transition-fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg) translateZ(0);
+  }
+}
+
+@keyframes trace {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+// Vue portal
+.vuePortal__ForModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-overlay;
+}
+
+.vuePortal__ForNotification {
+  position: fixed;
+  top: rem(32);
+  right: 50%;
+  transform: translateX(50%);
+  z-index: $z-index-notification;
+}
+
+.vuePortal__ForDraft {
+  position: fixed;
+  bottom: rem(100);
+  left: rem(32);
+  z-index: $z-index-notification;
+}

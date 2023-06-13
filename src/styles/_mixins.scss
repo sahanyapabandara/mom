@@ -1,0 +1,59 @@
+/* GLOBAL MIXINS
+--------------------------------------------- */
+
+/// Used to hide an element visually, but keeping it accessible for
+/// accessibility tools.
+@mixin visually-hidden {
+  // Need to make sure we override any existing styles.
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/// Create stack-margin
+/// @param  {Number} stack-margin to set
+@mixin stack-margin($value) {
+  margin-bottom: $value;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/// Create inline-margin
+/// @param  {Number} inline-margin to set
+@mixin inline-margin($value) {
+  margin-right: $value;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/// Create font-size
+/// @param  {String} font-size value to set
+@mixin font-size($value) {
+  font-size: map-get($tokens-map, "font-size-" + $value) !important;
+
+  @if $value == 2xl or $value == xl {
+    @media #{$media-query-tablet} {
+      font-size: map-get($tokens-map, "font-size-tablet-" + $value) !important;
+    }
+  }
+}
+
+/// Create line-height
+/// @param  {String} line-height value to set
+@mixin line-height($value) {
+  line-height: map-get($tokens-map, "line-height-" + $value) !important;
+
+  @if $value == 2xl or $value == xl {
+    @media #{$media-query-tablet} {
+      line-height: map-get($tokens-map, "line-height-tablet-" + $value) !important;
+    }
+  }
+}

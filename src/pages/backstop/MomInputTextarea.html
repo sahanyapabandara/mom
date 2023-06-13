@@ -1,0 +1,19 @@
+<mom-layout-wrapper class="p:24">
+  <mom-card title="MomInputTextarea">
+    <h4 class="mom-h4">Textarea with placeholder</h4>
+    <div class="snapshot"><mom-input-textarea placeholder="Placeholder" /></div>
+
+    <h4 class="mom-h4">Textarea with character count</h4>
+    <div class="snapshot"><mom-input-textarea maxlength="50" /></div>
+
+    <h4 class="mom-h4">Textarea with resize disabled</h4>
+    <div class="snapshot"><mom-input-textarea :resize="false" /></div>
+
+    <h4 class="mom-h4">Textarea with input state</h4>
+    <div class="snapshot stack-y:24">
+      <mom-input-textarea input-state="disabled" maxlength="50" />
+      <mom-input-textarea input-state="error" maxlength="50" />
+      <mom-input-textarea input-state="warning" maxlength="50" />
+    </div>
+  </mom-card>
+</mom-layout-wrapper>

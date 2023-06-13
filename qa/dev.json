@@ -1,0 +1,36 @@
+{
+  "momaccordion": {
+    "edit": "accordion_edit_link"
+  },
+  "momcard": {
+    "edit": "card_edit_link",
+    "continue": "card_continue_btn"
+  },
+  "momsummary": {
+    "edit": "summary_edit_link"
+  },
+  "mompageheader": {
+    "username": "user_name",
+    "companyname": "company_name",
+    "companyuen": "company_uen",
+    "logout": "logout_btn",
+    "savedraft": "save_draft_btn",
+    "lastsaved": "last_saved_time"
+  },
+  "acknowledgementpage": {
+    "print": "acknowledgement_print_link",
+    "download": "acknowledgement_download_link"
+  },
+  "landingpage": {
+    "start": "landing_start_btn"
+  },
+  "summarypage": {
+    "checkbox": "summary_confirmation_checkbox",
+    "continue": "summary_continue_btn",
+    "print": "summary_print_link",
+    "download": "summary_download_link"
+  },
+  "blockerpage": {
+    "title": "blockerpage_title"
+  }
+}

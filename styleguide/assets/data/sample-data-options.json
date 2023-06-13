@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "results": [
+    {
+      "label": "Option one",
+      "value": "1"
+    },
+    {
+      "label": "Option two",
+      "value": "2"
+    },
+    {
+      "label": "Option three",
+      "value": "3"
+    },
+    {
+      "label": "Option four",
+      "value": "4"
+    },
+    {
+      "label": "Option five",
+      "value": "5"
+    },
+    {
+      "label": "Option six",
+      "value": "6"
+    },
+    {
+      "label": "Option seven",
+      "value": "7"
+    },
+    {
+      "label": "Option eight",
+      "value": "8"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+// Breakpoints
+@include set(
+  breakpoint,
+  (
+    mobile: rem(320),
+    tablet: rem(720),
+    desktop: rem(1024),
+    print: (
+      type: print,
+    ),
+  )
+);
+
+// Spacing values
+@include set(
+  spacing,
+  (
+    48: rem(48),
+    32: rem(32),
+    24: rem(24),
+    20: rem(20),
+    16: rem(16),
+    12: rem(12),
+    8: rem(8),
+    4: rem(4),
+    2: rem(2),
+    0: 0,
+  )
+);
+
+// Coordinate values
+@include set(
+  coordinate,
+  map-merge(
+    get(spacing),
+    (
+      a: auto,
+    )
+  )
+);
+
+// Page wrapper widths
+@include set(
+  wrap,
+  (
+    s: rem(480),
+    m: rem(720),
+    l: rem(1120),
+    full: 100%,
+  )
+);
