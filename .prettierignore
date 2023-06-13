@@ -1,0 +1,16 @@
+package.json
+package-lock.json
+src/assets/tokens/*
+src/assets/css/*
+src/assets/icons/*
+src/assets/images/*
+node_modules/*
+dist/*
+test/backstop/bitmaps_reference/*
+test/backstop/bitmaps_test/*
+test/backstop/html_report/*
+.gitignore
+.prettierignore
+.eslintignore
+.husky/*
+pkg/*

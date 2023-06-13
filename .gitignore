@@ -1,0 +1,19 @@
+node_modules/*
+dist/*
+
+# Editor directories and files
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore compiled tokens
+src/assets/tokens/*
+src/assets/css/*
+
+# backstop artifacts
+test/backstop/bitmaps_test/*
+test/backstop/html_report/*
